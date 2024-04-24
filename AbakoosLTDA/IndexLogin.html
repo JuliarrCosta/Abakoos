@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <script src="../AbakoosLTDA/javascript/bottonmenu.js" defer></script>
+    <script src="../AbakoosLTDA/javascript/logar.js" defer></script>
+    <script src="../AbakoosLTDA/javascript/ancora.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar show-menu">
+          <div class="header-content">
+              <div class="logo">
+                  <h1 class="title" onclick="anchorHome()">ABAK<span>OO</span>S</h1>
+              </div>
+
+              <div class="icons">
+                  <img src="../AbakoosLTDA/images/cart.png" class="">
+                  <img src="../AbakoosLTDA/images/menu.png" class="menu-button">
+              </div>
+          </div>
+       </div>
+      </header>
+    <main>
+        <form>
+            <div class="form-content">
+                <h3>FAZER LOGIN</h3>
+                <input class="email" id="email" type="text" name="email" placeholder="Email" >
+                <input class="password" id="password" type="password" name="password" placeholder="Senha">
+                <input class="enter" type="submit" name="ok" value="ENTRAR" onclick="validateAndLogin()">
+            </div>
+            <div class="register"><a href="file:///C:/Users/Julia/OneDrive/Documentos/AbakoosLTDA/indexCadastro.html">Ainda não tenho conta!</a></div>
+            <div id="error-message"></div>
+        </form>
+    </main>
+</body>
+</html>

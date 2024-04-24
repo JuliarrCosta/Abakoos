@@ -1,0 +1,188 @@
+/*Padronização*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;  
+}
+/*Header*/
+
+body{
+  background-color:  #f2f2f2;
+  font-family: 'Arial';
+}
+.header-content{
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-bar{
+  background-color:#00004b;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 0px 10px#00004b;
+  z-index: 99;
+
+}
+
+/*Filho direto navbar*/
+.nav-bar>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.logo h1{
+  color: white;
+ 
+}
+
+.logo span{
+  color:  #ff4500;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+}
+
+.icons img{
+  width: 30px;
+  cursor: pointer;
+  
+}
+
+.icons img:first-child{
+  margin: 1rem;
+}
+
+nav ul li{
+  color: #ff4500;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+nav ul li:hover{
+  transform: translateY(-3px);
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.menu-button{
+  display: none;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  font-size: 0.8rem;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Ajuste a largura do formulário conforme necessário */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  border: 1px solid #cecece;
+}
+.container-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.container-button a{
+  padding: 1rem;
+}
+
+button {
+  background-color:#ff4500 ;
+  color:  white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+ 
+}
+
+button:hover {
+  background-color: #0a0475;
+}
+
+.error {
+  color: red;
+}
+
+/* Adicionando regras de mídia para tornar o formulário mais responsivo */
+
+
+@media (max-width: 800px){
+  .logo{
+    font-size: 1rem;
+  }
+  
+  .menu-button{
+    display: block;
+  }
+  
+  .header-bottom-side{
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem;
+  }
+  nav{
+    position: absolute;
+    background-color: #00004b;
+    width: 100%;
+    top: 62px;
+    display: none;
+    
+  }
+  .show-menu nav{
+    display: block;
+    
+  }
+  
+  nav ul{
+    flex-direction: column;
+  }
+  
+  nav ul li{
+    text-align: center;
+    padding: 0.8rem;
+  }
+  
+  .header-bottom-side-right{
+    margin-top: 50px;
+  }
+  form {
+    width: 90%; /* Ajuste a largura do formulário para telas menores */
+  }
+}

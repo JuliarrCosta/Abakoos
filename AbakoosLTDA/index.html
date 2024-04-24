@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abakoos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <script src="../AbakoosLTDA/javascript/slide.js" defer></script>
+    <script src="../AbakoosLTDA/javascript/bottonmenu.js" defer></script>
+    <script src="../AbakoosLTDA/javascript/ancora.js" defer></script>
+    <script src="../AbakoosLTDA/javascript/exit.js" defer></script>
+    <script src="../AbakoosLTDA/javascript/userName.js" defer></script>
+</head>
+<body>
+    <div class="nav-bar show-menu">
+        <div class="header-content">
+            <div class="logo">
+                <h1 class="title" onclick="anchorHome()">ABAK<span>OO</span>S</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li id="link" onclick="anchorHome()">Home </li>
+                    <li onclick="anchorProducts()">Produtos </li>
+                    <li onclick="anchorLogin()">Entrar </li>
+                    <li onclick="anchorRegister()">Cadastrar</li>
+                    <li onclick="exit()">Sair</li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div id="user"></div>
+                <img src="../AbakoosLTDA/images/cart.png" class="">
+                <img src="../AbakoosLTDA/images/menu.png" class="menu-button">
+            </div>
+        </div>
+    </div>
+    <header>
+        <!--TESTE CAROUSEL-->
+        <div class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                
+                <div class="slide-box primeiro"> 
+                    <div class="header-content">
+                        <div class="header-bottom-side">
+                            <div class="header-bottom-side-left">
+                                <h2>Dell G15</h2>
+                                <p>Eleve sua experiência de jogo para um novo patamar! Desempenho excepcional, gráficos impressionantes e velocidade relâmpago unem-se em um design elegante. Domine cada detalhe, mergulhe em mundos virtuais e conquiste a vitória com o poder incomparável do <span> Dell G15 </span></p>
+                                <button> Compre Agora &#8594</button>
+                            </div>
+                            <div class="header-bottom-side-right">
+                                <img src="../AbakoosLTDA/images/gaming-dellg15-header.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slide-box"> 
+                    <div class="header-content">
+                        <div class="header-bottom-side">
+                            <div class="header-bottom-side-left">
+                                <h2>Alienware</h2>
+                                <p>Eleve sua experiência de jogo para um novo patamar! Desempenho excepcional, gráficos impressionantes e velocidade relâmpago unem-se em um design elegante. Domine cada detalhe, mergulhe em mundos virtuais e conquiste a vitória com o poder incomparável do <span> Dell G15 </span></p>
+                                <button> Compre Agora &#8594</button>
+                            </div>
+                            <div class="header-bottom-side-right">
+                                <img src="../AbakoosLTDA/images/gaming-alienware-header.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slide-box"> 
+                    <div class="header-content">
+                        <div class="header-bottom-side">
+                            <div class="header-bottom-side-left">
+                                <h2>Nitro 5</h2>
+                                <p>Eleve sua experiência de jogo para um novo patamar! Desempenho excepcional, gráficos impressionantes e velocidade relâmpago unem-se em um design elegante. Domine cada detalhe, mergulhe em mundos virtuais e conquiste a vitória com o poder incomparável do <span> Dell G15 </span></p>
+                                <button> Compre Agora &#8594</button>
+                            </div>
+                            <div class="header-bottom-side-right">
+                                <img src="../AbakoosLTDA/images/gaming-nitro5-header.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        <!--TESTE CAROUSEL-->
+    </header>
+    <!--Main -->
+    <main>
+        <div class="blue-background">
+            <div class="page-content">
+                <div class="favorites">
+                    <img src="../AbakoosLTDA/images/star.png" alt="favoritos">
+                </div>
+                <div class="columns columns-3">
+                    <img src="../AbakoosLTDA/images/products/product-1.png" alt="">
+                    <img src="../AbakoosLTDA/images/products/product-2.png" alt="">
+                    <img src="../AbakoosLTDA/images/products/product-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <h3 class="section-title">Veja alguns de nossos produtos</h3>
+            <div class="subtitle"></div>
+            <div class="columns columns-4">
+                <div class="product-card">
+                    <img src="../AbakoosLTDA/images/products/product-4.png" alt="">
+                    <p class="product-name">Combo gamer</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 199.90</p>
+                </div>
+                <div class="product-card">
+                    <img src="../AbakoosLTDA/images/products/product-12.png" alt="">
+                    <p class="product-name">XBOX</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 1999.90</p>
+                </div>
+                <div class="product-card">
+                    <img src="../AbakoosLTDA/images/products/product-5.png" alt="">
+                    <p class="product-name">Placa de video MSI</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 1100.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="../AbakoosLTDA/images/products/product-8.png" alt="">
+                    <p class="product-name">Iphone 14</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 199.90</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="blue-background">
+        <div class="page-content footer-content">
+            <div class="logo">
+                <h1 class="title">ABAK<span>OO</span>S</h1>
+            </div>
+            <div class="contact">
+                <address>Juliaraquel@alunos.utfpr.edu.br</address>
+                <p>Number: 00 9999-9999</p>
+            </div>
+        </div>      
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="../AbakoosLTDA/css/styleCarrinho.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <script src="javascript/ancora.js" defer></script>
+    <script src="javascript/tableCar.js" defer></script>
+</head>
+<body>
+    <div class="nav-bar show-menu">
+        <div class="header-content">
+            <div class="logo">
+                <h1 class="title" onclick="anchorHome()">ABAK<span>OO</span>S</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li id="link" onclick="anchorHome()">Home </li>
+                    <li onclick="anchorProducts()">Produtos </li>
+                    <li onclick="anchorLogin()">Entrar </li>
+                    <li onclick="anchorRegister()">Cadastrar</li>
+                    <li onclick="exit()">Sair</li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div id="user"></div>
+                <img src="../AbakoosLTDA/images/cart.png" class="">
+                <img src="../AbakoosLTDA/images/menu.png" class="menu-button">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cart">
+            <div class="top">
+                <h2>Carrinho de compras</h2>
+                <h2 id="itemA"></h2>
+            </div>
+            <table cellspacing="0" class="table-head">
+                    <tr>
+                        <th width="200px"  class="head-img">Imagem</th>
+                        <th width="140px">Nome</th>
+                        <th width="240px" >Quantidade</th>
+                        <th >Preço</th>
+                        <th >Remover</th>
+                        
+                    </tr>
+            </table>
+            <table id="root" cellspacing="0"></table>
+            <hr>
+        </div>
+        <div class="summary">
+            <div class="top">
+                <h2>Detalhes</h2>
+            </div>
+            <div class="detail">
+                <h2 id="itemB">TOTAL</h2>
+                <h2 id="totalA">R$</h2>
+            </div>
+            <div style="margin-top: 30px; padding: 0 30px;">
+                <h2>Código promocional</h2>
+                <input type="text" placeholder="Inserir cupom!">
+                <button class="first-btn" id="promo" onclick="applyDiscount() ">Aplicar</button>
+                <hr>
+                <div class="top">
+                    <div class="discount"></div>
+                    <div class="tot">
+                        <h2>TOTAL </h2>   
+                        <h2 id="totalB"> R$</h2>
+                    </div>
+                </div>
+                <div style="padding: 0 10px; margin-bottom: 20px;">
+                    <button class="checkout">Pagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/shoppingCar.js"></script>
+</body>
+</html>

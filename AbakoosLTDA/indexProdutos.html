@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleProdutos.css">
+    <script src="javascript/bottonmenu.js" defer></script>
+    <script src="javascript/preview.js" defer></script>
+    <script src="../AbakoosLTDA/javascript/ancora.js" defer></script>
+    <script src="javascript/search.js" defer></script>
+    <script src="javascript/userName.js" defer></script> 
+    <script src="javascript/addToCart.js" defer></script>
+    <script src="javascript/shoppingCar.js" defer></script>
+    
+    <title>Produtos</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar show-menu">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 class="title" onclick="anchorHome()">ABAK<span>OO</span>S</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="link" onclick="anchorHome()">Home </li>
+                        <li onclick="anchorProducts()">Produtos </li>
+                        <li onclick="anchorLogin()">Entrar </li>
+                        <li onclick="anchorRegister()">Cadastrar</li>
+                        <li onclick="exit()">Sair</li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <div id="user"></div>
+                    <div class="shopping" onclick="anchorShoppingCart()">
+                        <img src="../AbakoosLTDA/images/cart.png" class="icon">
+                        <span class="icon quantity">0</span>
+                    </div>
+                    <img src="../AbakoosLTDA/images/menu.png" class="menu-button">
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Pesquise por um produto" id="search-bar">
+            <div class="button" onclick="search();">
+                <img src="../AbakoosLTDA/images/search.png" class="search-button">
+            </div>
+        </div>
+    </header>   
+    <main>
+        <div class="taskbar">
+            <div class="filter" >
+                <img src="../AbakoosLTDA/images/filter.png" alt="">
+            </div>        
+        </div>
+        <div class="columns columns-4">
+            <div class="product-cart-tot">
+                <div class="product-card" id="product-1"  data-name="p-0" product-name="Combo Gamer" price="199.90" image="../AbakoosLTDA/images/products/product-4.png">
+                    <img class="image" src="../AbakoosLTDA/images/products/product-4.png" alt="">
+                    <p class="product-name">Combo gamer</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 199.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button id="buy" onclick="addToCart('product-1'), addToCartTable('product-1')"> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card" data-name="p-1" id="product-2" product-name="XBOX" price="1999.90" image="../AbakoosLTDA/images/products/product-12.png">
+                    <img src="../AbakoosLTDA/images/products/product-12.png" alt="">
+                    <p class="product-name">XBOX</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 1999.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button id="buy" onclick="addToCart('product-2'), addToCartTable('product-2')"> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card" data-name="p-2"  id="product-3" product-name="Placa de video MSI" price="1100.00" image="../AbakoosLTDA/images/products/product-5.png">
+                    <img src="../AbakoosLTDA/images/products/product-5.png" alt="">
+                    <p class="product-name">Placa de video MSI</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 1100.00</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button id="buy" onclick="addToCart('product-3'), addToCartTable('product-3')"> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card" data-name="p-3" id="product-4" product-name="Iphone 14" price="199.90" image="../AbakoosLTDA/images/products/product-8.png">
+                    <img src="../AbakoosLTDA/images/products/product-8.png" alt="">
+                    <p class="product-name">Iphone 14</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 199.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button onclick="addToCart('product-4'), addToCartTable('product-4')"> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card" data-name="p-4" id="product-5" product-name="Combo gamer" price="199.90" image="../AbakoosLTDA/images/products/product-1.png">
+                    <img src="../AbakoosLTDA/images/products/product-1.png" alt="">
+                    <p class="product-name">Combo gamer</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 199.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now" onclick="addToCart('product-5'), addToCartTable('product-5')"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card"  data-name="p-5" id="product-6" product-name="XBOX" price="1999.90" image="../AbakoosLTDA/images/products/product-6.png">
+                    <img src="../AbakoosLTDA/images/products/product-6.png" alt="">
+                    <p class="product-name">XBOX</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 1999.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button onclick="addToCart('product-6'), addToCartTable('product-6')"> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card"  data-name="p-6" id="product-7" product-name="Placa de video MSI" price="1100.00" image="../AbakoosLTDA/images/products/product-7.png">
+                    <img src="../AbakoosLTDA/images/products/product-7.png" alt="">
+                    <p class="product-name">Placa de video MSI</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 1100.00</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now" onclick="addToCart('product-7'), addToCartTable('product-7')"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                 <div class="product-card" data-name="p-7" id="product-8" product-name="Iphone 14" price="199.90" image="../AbakoosLTDA/images/products/product-11.png">
+                    <img src="../AbakoosLTDA/images/products/product-11.png" alt="">
+                    <p class="product-name">Iphone 14</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 199.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now" onclick="addToCart('product-8'), addToCartTable('product-8')"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card" data-name="p-8" id="product-10" product-name="Combo Gamer" price="199.90" image="../AbakoosLTDA/images/products/product-13.png">
+                    <img src="../AbakoosLTDA/images/products/product-13.png" alt="">
+                    <p class="product-name">Combo gamer</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 199.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now" onclick="addToCart('product-10'), addToCartTable('product-10')"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card" data-name="p-9" id="product-11" product-name="XBOX" price="1999.90" image="../AbakoosLTDA/images/products/product-14.png">
+                    <img src="../AbakoosLTDA/images/products/product-14.png" alt="">
+                    <p class="product-name">XBOX</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 1999.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now" onclick="addToCart('product-11'), addToCartTable('product-11')"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card" data-name="p-10" id="product-12" product-name="Placa de video MSI" price="1100.00" image="../AbakoosLTDA/images/products/product-3.png">
+                    <img src="../AbakoosLTDA/images/products/product-3.png" alt="">
+                    <p class="product-name">Placa de video MSI</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 1100.00</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now" onclick="addToCart('product-12'), addToCartTable('product-12')"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-tot">
+                <div class="product-card" data-name="p-11" id="product-13" product-name="Iphone 14" price="199.90" image="../AbakoosLTDA/images/products/product-10.png">
+                    <img src="../AbakoosLTDA/images/products/product-10.png" alt="">
+                    <p class="product-name">Iphone 14</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="price"><span>R$</span> 199.90</p>
+                </div>
+                <div class="btn">
+                    <div class="buy-now" onclick="addToCart('product-13'), addToCartTable('product-13')"> 
+                        <button> Compre agora</button>0
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products-preview" >
+            <div class="preview active" data-target="p-0">
+                <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+                <img src="../AbakoosLTDA/images/products/product-4.png" class="product-img" alt="">
+                <h3>Combo gamer</h3>
+                <div class="stars">
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+                <div class="price">R$199.90</div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="preview" data-target="p-1">
+                <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+                <img src="../AbakoosLTDA/images/products/product-12.png" class="product-img" alt="">
+                <h3>XBOX</h3>
+                <div class="stars">
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+                <div class="price">R$199.90</div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="preview" data-target="p-2">
+                <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+                <img src="../AbakoosLTDA/images/products/product-5.png" class="product-img" alt="">
+                <h3>Combo gamer</h3>
+                <div class="stars">
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+                <div class="price">R$199.90</div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="preview" data-target="p-3">
+                <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+                <img src="../AbakoosLTDA/images/products/product-8.png" class="product-img" alt="">
+                <h3>Combo gamer</h3>
+                <div class="stars">
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+                <div class="price">R$199.90</div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="preview" data-target="p-4">
+                <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+                <img src="../AbakoosLTDA/images/products/product-1.png" class="product-img" alt="">
+                <h3>Combo gamer</h3>
+                <div class="stars">
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+                <div class="price">R$199.90</div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="preview" data-target="p-5">
+                <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+                <img src="../AbakoosLTDA/images/products/product-6.png" class="product-img" alt="">
+                <h3>Combo gamer</h3>
+                <div class="stars">
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+                <div class="price">R$199.90</div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="preview" data-target="p-6">
+                <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+                <img src="../AbakoosLTDA/images/products/product-7.png" class="product-img" alt="">
+                <h3>Combo gamer</h3>
+                <div class="stars">
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+                <div class="price">R$199.90</div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="preview" data-target="p-7">
+                <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+                <img src="../AbakoosLTDA/images/products/product-11.png" class="product-img" alt="">
+                <h3>Combo gamer</h3>
+                <div class="stars">
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <span>(250)</span>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+                <div class="price">R$199.90</div>
+                <div class="btn">
+                    <div class="buy-now"> 
+                        <button> Compre agora</button>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        <div class="preview" data-target="p-8">
+            <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+            <img src="../AbakoosLTDA/images/products/product-13.png" class="product-img" alt="">
+            <h3>Combo gamer</h3>
+            <div class="stars">
+                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <span>(250)</span>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+            <div class="price">R$199.90</div>
+            <div class="btn">
+                <div class="buy-now"> 
+                    <button> Compre agora</button>
+                </div>
+                <div class="shopping-cart">
+                    <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="preview" data-target="p-9">
+            <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+            <img src="../AbakoosLTDA/images/products/product-14.png" class="product-img" alt="">
+            <h3>Combo gamer</h3>
+            <div class="stars">
+                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <span>(250)</span>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+            <div class="price">R$199.90</div>
+            <div class="btn">
+                <div class="buy-now"> 
+                    <button> Compre agora</button>
+                </div>
+                <div class="shopping-cart">
+                    <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="preview" data-target="p-10">
+            <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+            <img src="../AbakoosLTDA/images/products/product-3.png" class="product-img" alt="">
+            <h3>Combo gamer</h3>
+            <div class="stars">
+                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <span>(250)</span>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+            <div class="price">R$199.90</div>
+            <div class="btn">
+                <div class="buy-now"> 
+                    <button> Compre agora</button>
+                </div>
+                <div class="shopping-cart">
+                    <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="preview" data-target="p-11">
+            <img src="../AbakoosLTDA/images/close.png" class="close" alt="">
+            <img src="../AbakoosLTDA/images/products/product-10.png" class="product-img" alt="">
+            <h3>Combo gamer</h3>
+            <div class="stars">
+                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <span>(250)</span>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a consequuntur eveniet iste eius! Corrupti minus sed, blanditiis incidunt placeat possimus. Eius ipsa odit repudiandae ipsum veniam nihil officia pariatur.</p>
+            <div class="price">R$199.90</div>
+            <div class="btn">
+                <div class="buy-now"> 
+                    <button> Compre agora</button>
+                </div>
+                <div class="shopping-cart">
+                    <img src="../AbakoosLTDA/images/shopping-cart.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </main>
+    <footer class="blue-background">
+        <div class="page-content footer-content">
+            <div class="logo">
+                <h1 class="title">ABAK<span>OO</span>S</h1>
+            </div>
+            <div class="contact">
+                <address>Juliaraquel@alunos.utfpr.edu.br</address>
+                <p>Number: 00 9999-9999</p>
+            </div>
+        </div>      
+    </footer>
+    
+</body>
+</html>

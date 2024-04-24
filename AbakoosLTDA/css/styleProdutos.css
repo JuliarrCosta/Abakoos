@@ -1,0 +1,386 @@
+/*Padronização*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+    outline: none; border:none;
+}
+/*Header*/
+
+body{
+    font-family: 'Arial';
+}
+.header-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-content nav{
+    padding: 0;
+}
+.nav-bar{
+    background-color:#00004b;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px#00004b;
+    z-index: 99;
+
+}
+
+
+/*Filho direto navbar*/
+.nav-bar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.logo h1{
+    color: white;
+   
+}
+
+.logo span{
+    color:  #ff4500;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons img{
+    width: 30px;
+    cursor: pointer;
+    
+}
+
+.icons img:first-child{
+    margin: 1rem;
+}
+
+
+nav ul li{
+    color: #ff4500;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #ff4500; /* Define a cor do link quando visitado (não altera a cor) */
+  }
+
+nav ul li:hover{
+    transform: translateY(-3px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.menu-button{
+    display: none;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    background-color: #00004b;
+    padding-bottom: 1rem;
+    padding-top: 0.2rem;
+    
+}
+.header{
+    display: block;
+}
+.search input{
+    border-radius: 5px;
+    margin-right: 0.8rem;
+    width: 50%;
+   
+}
+.search-button{
+
+    width: 2rem;
+}
+
+.logo{
+    margin-top: 3rem;
+}
+
+@media (max-width: 800px){
+    .logo{
+        font-size: 1rem;
+    }
+    .menu-button{
+      display: block;
+    }
+    
+    .header-bottom-side{
+      flex-direction: column;
+      text-align: center;
+      padding: 4rem;
+    }
+    nav{
+      position: absolute;
+      background-color: #00004b;
+      width: 100%;
+      top: 62px;
+      display: none;
+      
+    }
+    .show-menu nav{
+      display: block;
+      
+    }
+    
+    nav ul{
+      flex-direction: column;
+    }
+    
+    nav ul li{
+      text-align: center;
+      padding: 0.8rem;
+    }
+    
+    .header-bottom-side-right{
+      margin-top: 50px;
+    }
+
+     /* Ajuste a largura do formulário para telas menores */
+    .search input{
+        width: 64%;
+    }
+}
+main{
+    padding: 5rem;
+    background-color: #f2f2f2;
+}
+.taskbar{
+    display: flex;
+    background-color: #ff4500;
+    padding: 0.2rem;
+    justify-content: flex-end;
+}
+.columns{
+    display: grid;
+    padding: 4rem 1rem; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+.columns img{
+    width: 95%;
+}
+.columns-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem
+}
+.product-card, .product-cart-tot{
+    cursor: pointer;
+    transition: all 0.4s;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
+.product-card:hover{
+    transform: translatey(-10px);
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #00004b;
+}
+
+.subtitle{
+    width: 100px;
+    height: 3px;
+    background-color: #ff4500;
+    border-radius: 9999px;
+    margin: 8px auto;
+}
+
+.product-name{
+    font-weight: bold;
+}
+
+.rate{
+    color: #ff4500;
+    font-size: 1.4rem;
+}
+
+.price{
+    font-style: italic;
+}
+
+@media(max-width: 800px){
+    .columns-4{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-name, .price, .rate{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+    main{
+        padding: 2rem;
+    }
+}
+.filter{
+    margin-right: 1rem;
+}
+.filter img{
+    display: flex;
+    width: 1.6rem;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn .buy-now button{
+    background-color: #00004b;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.5s;
+    margin-right: 1rem;
+}
+
+.btn .shopping-cart{
+    border-radius: 9999px;
+    background-color: #00004b;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn .shopping-cart img{
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+footer{
+    display: flex;
+    padding: 4rem;
+    background-color: #00004b;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    text-align: center;
+    padding: 1rem;
+    
+}
+.contact{
+   text-align: center;
+   justify-content: center;
+    color: white;
+
+}
+
+/* MODAL */
+
+.products-preview{
+    position: fixed;
+    top: 0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-preview .preview{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+    
+}
+.product-img{
+    width: 20rem;
+    height: 20rem;
+}
+.products-preview .preview.active{
+    display: inline-block;
+}
+
+.products-preview .preview .close{
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    cursor: pointer;
+    font: 4rem;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 800px){
+
+    .product-img{
+        width: 15rem;
+        height: 15rem;
+    }
+
+}
+.shopping{
+    position: relative;
+    
+}
+.icon{
+    margin: 1rem;
+}
+.shopping span{
+    background-color: #ff4500;
+    border-radius: 50%;
+    color: #f2f2f2;
+    position: absolute;
+    left: 21px;
+    padding: 2px;
+    width: 1.3rem;
+    height: 1.3rem;
+    text-align: center;
+}
+
+#user{
+    color: #ff4500;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.buy-now button:hover{
+    background-color: #ff4500;
+}
