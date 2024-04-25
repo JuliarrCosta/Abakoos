@@ -1,4 +1,5 @@
 ## Introdução
+ Esse foi o meu projeto final de Desenvolvimento Web Servidor na UTFPR. Foi desenvolvido 100% por mim.
  Cada página foi construída com habilidades em HTML, CSS e JavaScript puro, garantindo uma base sólida para uma experiência dinâmica e responsiva.
 
 ## Página inicial
